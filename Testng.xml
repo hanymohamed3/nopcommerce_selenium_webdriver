@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="nopcommerce_regression_suite" verbose="1" >
+    <parameter name="browser" value="edge"></parameter>
+    <test name="Regression1">
+        <classes>
+           <class name="review_test"></class>
+            <class name="change_currency"></class>
+            <class name="add_to_cart_tests"></class>
+            <class name="Change_password_test"></class>
+            <class name="check_out_unregistered_user"></class>
+            <class name="compare_product_test"></class>
+            <class name="Contact_us_test_for_registereduserr"></class>
+            <class name="Contact_us_test_for_unregistereduser"></class>
+            <class name="copon_and_gift_test"></class>
+            <class name="email_freind_registered_user"></class>
+            <class name="emailfriend_negative_scenario"></class>
+            <class name="hover_menu_test"></class>
+            <class name="Login_test"></class>
+            <class name="Registration_test"></class>
+            <class name="search_for_product_for_suggestlist"></class>
+            <class name="search_for_product_test_By_name"></class>
+            <class name="wishlist_many_product"></class>
+            <class name="wishlist_test_oneproduct"></class>
+            <class name="Registration_with_csv_file"></class>
+            <class name="Registration_with_datadriven_excelfile"></class>
+            <class name="Registration_with_datadriven_Json_file"></class>
+            <class name="Registration_with_datadriven_excelfile"></class>
+            <class name="Registration_with_dataprovider_propertiesfile"></class>
+        </classes>
+    </test>
+</suite>
