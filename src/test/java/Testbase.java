@@ -48,13 +48,22 @@ public static String path=System.getProperty("user.dir")+"/Downloads";
         if(browsername.equalsIgnoreCase("chrome"))
         {
             driver= new ChromeDriver();
+            driver.manage().window().maximize();
         }
         else if (browsername.equalsIgnoreCase("edge"))
         {
             driver=new EdgeDriver();
+            driver.manage().window().maximize();
+        }
+        else if (browsername.equalsIgnoreCase("chrome_headless"))
+        {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless=new");
+
+            driver= new ChromeDriver(options);
         }
 
-        driver.manage().window().maximize();
+
         driver.navigate().to("https://demo.nopcommerce.com/");
 
 
