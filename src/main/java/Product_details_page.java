@@ -45,6 +45,7 @@ public class Product_details_page extends Pagebase{
     }
     public String product_price()
     {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(price));
         return driver.findElement(price).getText();
     }
     public void click_add_to_wishlist()

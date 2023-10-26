@@ -20,6 +20,7 @@ public class Registration_Page extends Pagebase {
     private By Password=By.id("Password");
     private By Confirm_password=By.id("ConfirmPassword");
     private By Register_button=By.id("register-button");
+    private By click_img_homepage=By.cssSelector("div.header-logo a");
 
 
     public void Registration(String firstname,String lastname,String email,String password,String confirm_password)
@@ -48,7 +49,11 @@ public class Registration_Page extends Pagebase {
     }
     public void clickregister()
     {
-        driver.findElement(Register_button).click();
+        click(driver.findElement(Register_button));
+    }
+    public void click_on_homeoage_img()
+    {
+        click(driver.findElement(click_img_homepage));
     }
 
 
