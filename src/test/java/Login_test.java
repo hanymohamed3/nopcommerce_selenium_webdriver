@@ -34,6 +34,7 @@ public class Login_test extends Testbase {
         home_page=new Home_page(driver);
         loginPage=new Login_page(driver);
         SoftAssert softAssert = new SoftAssert();
+        Thread.sleep(3000);
 
         home_page.click_on_login_button();
 
