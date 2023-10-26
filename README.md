@@ -15,3 +15,5 @@ The Java language is used in this project
 
 -POM desgin pattern
 
+-headless testing
+
